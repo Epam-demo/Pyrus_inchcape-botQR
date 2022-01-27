@@ -4,7 +4,6 @@ import json
 from flask import Flask
 from flask import request
 
-
 app = Flask(__name__)
 app.config.from_json('config.json')
 
