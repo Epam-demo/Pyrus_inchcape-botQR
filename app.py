@@ -28,5 +28,6 @@ def _prepare_response(body):
     comment_text = "Hello, {}! You said: {}".format(author_name, comment["text"])
     return "{{ \"text\":\"{}\", \"reassign_to\":{{ \"id\":{} }} }}".format(comment_text, comment_author["id"])
 
+
 if __name__ == "__main__":
     app.run()
